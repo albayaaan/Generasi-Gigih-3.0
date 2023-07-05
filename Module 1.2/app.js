@@ -18,6 +18,9 @@ const fetchSongs = (songs, key) => {
     });
 };
 
+// console.log("List lagu: ", fetchSongs(songs, "bwua"));
+
+// promise format
 fetchSongs(songs, "bwua")
     .then((res) => {
         console.log(res);
@@ -25,3 +28,15 @@ fetchSongs(songs, "bwua")
     .catch((err) => {
         console.log(err);
     });
+
+// async await format
+async function displaySong() {
+    try {
+        const listSong = await fetchSongs(songs, "x");
+        console.log(listSong);
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+displaySong();
