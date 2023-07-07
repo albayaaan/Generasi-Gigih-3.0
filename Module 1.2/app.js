@@ -1,4 +1,4 @@
-let songs = [
+let songList = [
     { title: "Someone Like You", artists: [{ name: "Adele" }], duration: 250 },
     { title: "Bohemian Rhapsody", artists: [{ name: "Queen" }], duration: 355 },
     { title: "Shape of You", artists: [{ name: "Ed Sheeran" }], duration: 235 },
@@ -14,14 +14,14 @@ const fetchSongs = (songs, key) => {
             } else {
                 rejected("wrong key");
             }
-        }, 3000);
+        }, 2000);
     });
 };
 
 // console.log("List lagu: ", fetchSongs(songs, "bwua"));
 
 // promise format
-fetchSongs(songs, "bwua")
+fetchSongs(songList, "bwua")
     .then((res) => {
         console.log(res);
     })
@@ -32,7 +32,7 @@ fetchSongs(songs, "bwua")
 // async await format
 async function displaySong() {
     try {
-        const listSong = await fetchSongs(songs, "x");
+        const listSong = await fetchSongs(songList, "x");
         console.log(listSong);
     } catch (error) {
         console.log(error);
