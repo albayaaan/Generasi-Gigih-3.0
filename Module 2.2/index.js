@@ -25,7 +25,10 @@ app.get("/playlist", (req, res) => {
 });
 
 app.post("/playlist", express.json(), (req, res) => {
-    playlist.push(req.body);
+    playlist.push({
+        id: playlist.length + 1,
+        ...req.body,
+    });
     res.send(playlist);
 });
 
