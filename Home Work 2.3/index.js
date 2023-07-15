@@ -1,30 +1,13 @@
 import express from "express";
-import { getPlaylist, playSong, getSong } from "./PlaylistModel.js";
+import playlistRoute from "./routes/PlaylistRoute.js";
 const app = express();
 
-app.get("/playlist", (req, res) => {
-    const playlist = getPlaylist();
-    const sortPlaylist = playlist.sort((a, b) => b.played - a.played); // sorted by most played
-    res.json(sortPlaylist);
-});
+app.use("/", playlistRoute);
 
-app.get("/play/:id", (req, res) => {
-    const song = getSong(req.params.id);
-    if (song) {
-        playSong(song);
-        res.status(201).json({
-            msg: "music played",
-        });
-    } else {
-        res.status(404).json({
-            msg: "music not found",
-        });
-    }
-});
-
+// page not found
 app.use((req, res) => {
     res.status(404).json({
-        msg: "404 page not found",
+        msg: "page not found",
     });
 });
 

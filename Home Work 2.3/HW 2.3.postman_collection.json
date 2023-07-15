@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "e2a5c66e-13e9-4a94-a555-ba32a83d45d3",
+		"name": "HW 2.3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21534956",
+		"_collection_link": "https://www.postman.com/abyaaan/workspace/learn/collection/21534956-e2a5c66e-13e9-4a94-a555-ba32a83d45d3?action=share&creator=21534956&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "get all song",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/playlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"playlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "play a song",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/playlist/2/play",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"playlist",
+						"2",
+						"play"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add a song",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"title\": \"Kill Bill\",\r\n        \"artist\": [\r\n            \"SZA\",\r\n            \"Doja Cat\"\r\n        ],\r\n        \"url\": \"https://open.spotify.com/track/0CrcwVLUe8wzLUIXgjXVZJ?si=326e2c46cc1344a5\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/playlist",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"playlist"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get a song",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/playlist/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"playlist",
+						"3"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
