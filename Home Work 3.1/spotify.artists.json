@@ -1,0 +1,110 @@
+[{
+  "_id": {
+    "$oid": "64b5fd6afbc2b9e65c433d6b"
+  },
+  "name": "Ed Sheeran",
+  "date_of_birth": "17 February 1991",
+  "genre": [
+    "Pop",
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b5fd6afbc2b9e65c433d6c"
+  },
+  "name": "Adele",
+  "date_of_birth": "5 May 1988",
+  "genre": [
+    "Pop",
+    "Soul"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b5fd6afbc2b9e65c433d6d"
+  },
+  "name": "Luis Fonsi",
+  "date_of_birth": "15 April 1978",
+  "genre": [
+    "Latin Pop",
+    "Reggaeton"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b5fd6afbc2b9e65c433d6e"
+  },
+  "name": "Taylor Swift",
+  "date_of_birth": "13 December 1989",
+  "genre": [
+    "Pop",
+    "Country"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b5fd6afbc2b9e65c433d6f"
+  },
+  "name": "Camila Cabello",
+  "date_of_birth": "3 March 1997",
+  "genre": [
+    "Pop",
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b5fd6afbc2b9e65c433d70"
+  },
+  "name": "Billie Eilish",
+  "date_of_birth": "18 December 2001",
+  "genre": [
+    "Pop",
+    "Alternative"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b5fd6afbc2b9e65c433d71"
+  },
+  "name": "Mark Ronson",
+  "date_of_birth": "4 September 1975",
+  "genre": [
+    "Pop",
+    "Funk"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b5fd6afbc2b9e65c433d72"
+  },
+  "name": "Bruno Mars",
+  "date_of_birth": "8 October 1985",
+  "genre": [
+    "Pop",
+    "R&B"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b5fd6afbc2b9e65c433d73"
+  },
+  "name": "The Weeknd",
+  "date_of_birth": "16 February 1990",
+  "genre": [
+    "R&B",
+    "Pop"
+  ]
+},
+{
+  "_id": {
+    "$oid": "64b5fd6afbc2b9e65c433d74"
+  },
+  "name": "Daddy Yankee",
+  "date_of_birth": "3 February 1977",
+  "genre": [
+    "Reggaeton",
+    "Latin"
+  ]
+}]

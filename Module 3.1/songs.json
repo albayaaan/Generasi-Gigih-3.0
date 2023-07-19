@@ -1,0 +1,52 @@
+[
+    {
+        "title": "Shape of You",
+        "artists": ["Ed Sheeran"],
+        "album": "÷ (Divide)"
+    },
+    {
+        "title": "Someone Like You",
+        "artists": ["Adele"],
+        "album": "21"
+    },
+    {
+        "title": "Despacito",
+        "artists": ["Luis Fonsi", "Daddy Yankee"],
+        "album": "Vida"
+    },
+    {
+        "title": "Love Story",
+        "artists": ["Taylor Swift"],
+        "album": "Fearless"
+    },
+    {
+        "title": "Havana",
+        "artists": ["Camila Cabello"],
+        "album": "Camila"
+    },
+    {
+        "title": "Thinking Out Loud",
+        "artists": ["Ed Sheeran"],
+        "album": "x"
+    },
+    {
+        "title": "Bad Guy",
+        "artists": ["Billie Eilish"],
+        "album": "When We All Fall Asleep, Where Do We Go?"
+    },
+    {
+        "title": "Rolling in the Deep",
+        "artists": ["Adele"],
+        "album": "21"
+    },
+    {
+        "title": "Uptown Funk",
+        "artists": ["Mark Ronson", "Bruno Mars"],
+        "album": "Uptown Special"
+    },
+    {
+        "title": "Blinding Lights",
+        "artists": ["The Weeknd"],
+        "album": "After Hours"
+    }
+]
