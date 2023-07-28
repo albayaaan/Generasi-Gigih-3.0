@@ -1,4 +1,4 @@
-#Video
+## **Database Structure**
 
 -   Video object
 
@@ -11,54 +11,84 @@
   products: [mongoose.Schema.Types.ObjectId],
   comments: [mongoose.Schema.Types.ObjectId],
 }
+
+```
+
+-   Product object
+
+```
+{
+  _id: mongoose.Schema.Types.ObjectId,
+  title: String,
+  price: Number,
+  productUrl: String,
+}
+```
+
+```
+-   Comment object
+
+```
+
+{
+\_id: mongoose.Schema.Types.ObjectId,
+username: String,
+text: String,
+createdAt: Date,
+}
+
 ```
 
 ## **GET /videos**
 
 Returns all videos in the system.
 
--   **URL Params**  
+-   **URL Params**
     None
--   **Data Params**  
+-   **Data Params**
     None
--   **Headers**  
+-   **Headers**
     Content-Type: application/json
 -   **Success Response:**
--   **Code:** 200  
+-   **Code:** 200
     **Content:**
 
 ```
+
 {
-  videos: [
-           {<video_object>},
-           {<video_object>},
-           {<video_object>}
-         ]
+videos: [
+{<video_object>},
+{<video_object>},
+{<video_object>}
+]
 }
+
 ```
 
 ## **GET /videos/:id/products**
 
 Returns all product in the video.
 
--   **URL Params**  
+-   **URL Params**
     _Required:_ `id=[integer]`
--   **Data Params**  
+-   **Data Params**
     None
--   **Headers**  
+-   **Headers**
     Content-Type: application/json
 -   **Success Response:**
--   **Code:** 200  
+-   **Code:** 200
      **Content:**
 
 ```
+
 {
-  Products: [
-            {<product_object>},
-            {<product_object>},
-            {<product_object>}
-  ]
+Products: [
+{<product_object>},
+{<product_object>},
+{<product_object>}
+]
 }
+
 ```
 
 -   **Error Response:**
@@ -72,24 +102,26 @@ Returns all product in the video.
 
 Returns all comment in the video.
 
--   **URL Params**  
+-   **URL Params**
     _Required:_ `id=[integer]`
--   **Data Params**  
+-   **Data Params**
     None
--   **Headers**  
+-   **Headers**
     Content-Type: application/json
 -   **Success Response:**
--   **Code:** 200  
+-   **Code:** 200
      **Content:**
 
 ```
+
 {
-  Comments: [
-            {<comment_object>},
-            {<comment_object>},
-            {<comment_object>}
-  ]
+Comments: [
+{<comment_object>},
+{<comment_object>},
+{<comment_object>}
+]
 }
+
 ```
 
 -   **Error Response:**
@@ -98,3 +130,4 @@ Returns all comment in the video.
         OR
     -   **Code:** 500
         **Content:** `{ message: "Internal server error" }`
+```
