@@ -147,3 +147,55 @@ Creates a new comment and returns message success or failed.
     **Content:** `{ message: "Internal server error" }`
 
 ## **How To Run In Local**
+### Requirements
+Before running this application, make sure you have the following software installed:
+
+- Node.js (version 14 or higher)
+- MongoDB
+- MongoShell
+  
+### Installation
+
+- Clone this repository to your computer
+  <pre>
+  <code>
+  git clone https://github.com/username/project-express-mongodb.git
+  </code>
+  </pre>
+- Navigate to the project directory
+  <pre>
+  <code>
+  cd project-express-mongodb
+  </code>
+  </pre>
+- Install all dependencies
+  <pre>
+  <code>
+  npm install
+  </code>
+  </pre>
+
+
+### Initialization Database
+- activate mongosh
+<pre>
+  <code>
+  mongosh
+  </code>
+</pre>
+- load database 
+<pre>
+  <code>
+  load("/src/app/database/initialDatabase.js")
+  </code>
+</pre>
+
+
+### Running the Application
+<pre>
+  <code>
+  npm dev
+  </code>
+</pre>
+
+
